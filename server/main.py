@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from server.classifier.model import IrisModel
+from classifier.model import IrisModel
 
 app = FastAPI()
-model = IrisModel("server/models/iris_model.pkl")
+model = IrisModel("models/iris_model.pkl")
 
 class Features(BaseModel):
     data: list

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+venv/
+.env/
+*.env
+
+# Logs
+*.log
+
+# Docker
+*.env
+*.pid
+docker-compose.override.yml
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Tests
+*.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Models
+server/models/*.pkl

@@ -9,6 +9,6 @@ class InputData(BaseModel):
 
 @app.post("/classify")
 def classify(data: InputData):
-    response = requests.post("http://localhost:8001/predict", json={"data": data.features})
+    response = requests.post("http://server:8001/predict", json={"data": data.features})
     prediction = response.json()
     return {"class": prediction["prediction"]}
